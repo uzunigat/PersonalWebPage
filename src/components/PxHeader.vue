@@ -1,6 +1,6 @@
 <template>
 
-    <header class="bg-red-900">
+    <header class="bg-gray-900">
 
         <nav>
             <nav class="flex items-center justify-between flex-wrap bg-current p-6">
@@ -15,9 +15,9 @@
 
         <div :class="isOpen ? 'block' : 'hidden'">
 
-            <span class="block text-white font-semibold pt-2 pb-2" v-for="item in items" v-bind:key="item"> 
+            <span class="block f text-white font-semibold pt-2 pb-2" v-for="item in items" v-bind:key="item"> 
 
-                 <px-item-navbar class="block hover:bg-red-800 px-15 py-2" :item="item"/>
+                 <px-item-navbar class="block hover:bg-red-900 px-15 py-2" :item="item"/>
 
             </span>
 
@@ -43,8 +43,10 @@ export default {
 
             items:[
             {name: "Home",  link: "/"},
-            {name: "Project", link: "/Project" },
-            {name: "About", link: "/About"}],
+            {name: "Profile", link: "/Profile" },
+            {name: "Experiences", link: "/Experience"},
+            {name: "Skills", link: "/Skills"},
+            {name: "Projects", link: "/Project"}],
 
             isOpen: false,
 
