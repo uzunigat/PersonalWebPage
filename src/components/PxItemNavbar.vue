@@ -1,6 +1,6 @@
 <template>
     <router-link :to="item.link">
-        <span class="font-semibold text-xl tracking-tight"> {{item.name}}</span>
+        <span class="font-semibold tracking-tight"> {{item.name}}</span>
     </router-link>
 </template>
 
@@ -10,7 +10,9 @@ export default {
 
     name: "PxItemNavbar",
 
-    props: ["item"]
+    props: ["item"],
+
+
     
 }
 </script>>

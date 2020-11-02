@@ -4,31 +4,24 @@
 
         <nav>
             <nav class="flex items-center justify-between flex-wrap bg-current p-6">
-
-                <div class="flex items-center flex-shrink-0 text-white mr-6">
-
                    
-                    <pxLogo class="mr-3 h-10 w-10"></pxLogo>
-                    
-                    <span v-for="item in items" v-bind:key="item"> 
+                    <px-logo class="mr-3 h-10 w-10"></px-logo>
 
-                        <px-item-navbar class="mr-5" :item="item"/>
-
-                    </span>
-                   
-
-                </div>
-
-                <div class="hidden sm:block w-full block flex-grow lg:flex lg:items-center">
-                
-                    <div class="text-sm lg:flex-grow"></div>
-                
-                </div>
+                    <px-btn-menu v-on:menu-clicked="clickMenu"/>
 
             </nav>
 
-
         </nav>
+
+        <div :class="isOpen ? 'block' : 'hidden'">
+
+            <span class="block text-white font-semibold pt-2 pb-2" v-for="item in items" v-bind:key="item"> 
+
+                 <px-item-navbar class="block hover:bg-red-800 px-15 py-2" :item="item"/>
+
+            </span>
+
+        </div>
 
     </header>
 
@@ -37,12 +30,13 @@
 <script>
 
 import PxLogo from "@/components/PxLogo";
-import PxItemNavbar from "@/components/PxItemNavbar"
+import PxItemNavbar from "@/components/PxItemNavbar";
+import PxBtnMenu from "@/components/PxBtnMenu";
 
 export default {
     
     name: "Pxheader",
-    components: {PxLogo, PxItemNavbar},
+    components: {PxLogo, PxItemNavbar, PxBtnMenu},
     data(){
 
         return {
@@ -50,10 +44,23 @@ export default {
             items:[
             {name: "Home",  link: "/"},
             {name: "Project", link: "/Project" },
-            {name: "About", link: "/About"}]
+            {name: "About", link: "/About"}],
+
+            isOpen: false,
+
+        }
+
+    },
+
+        methods: {
+
+        clickMenu(){
+
+            this.isOpen = !this.isOpen
 
         }
 
     }
+    
 }
 </script>>
