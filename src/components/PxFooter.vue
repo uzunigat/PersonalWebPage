@@ -42,8 +42,8 @@ export default {
                 return{
 
                         tags: [
-                                {name: "email", icon: "../assets/mail.png", value: "zuniga.tellez.rodrigo.uriel@hotmail.com"},
-                                {name: "linkedin", icon: "../assets/linkedin.png", value: "linkedin/linkedin"}
+                                {name: "email", icon: 'mail.png', value: "zuniga.tellez.rodrigo.uriel@hotmail.com"},
+                                {name: "linkedin", icon: 'linkedin.png', value: "https://www.linkedin.com/in/rodrigo-uriel-zuniga-tellez-1121431b9"}
                         ]
 
                 }
