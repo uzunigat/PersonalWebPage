@@ -3,9 +3,9 @@
     <header class="bg-gray-900">
 
         <nav>
-            <nav class="flex items-center justify-between flex-wrap bg-current p-6">
+            <nav class="text-right bg-gray-900 p-6">
                    
-                    <px-logo class="mr-3 h-10 w-10"></px-logo>
+                    <!-- <px-logo class="mr-3 h-10 w-10"></px-logo> -->
 
                     <px-btn-menu v-on:menu-clicked="clickMenu"/>
 
@@ -15,7 +15,7 @@
 
         <div :class="isOpen ? 'block' : 'hidden'">
 
-            <span class="block f text-white font-semibold pt-2 pb-2" v-for="item in items" v-bind:key="item"> 
+            <span class="block text-center px-24 mx-24 text-white font-semibold pt-2 pb-2" v-for="item in items" v-bind:key="item"> 
 
                  <px-item-navbar class="block hover:bg-red-900 px-15 py-2" :item="item"/>
 
@@ -29,14 +29,14 @@
 
 <script>
 
-import PxLogo from "@/components/PxLogo";
+//import PxLogo from "@/components/PxLogo";
 import PxItemNavbar from "@/components/PxItemNavbar";
 import PxBtnMenu from "@/components/PxBtnMenu";
 
 export default {
     
     name: "Pxheader",
-    components: {PxLogo, PxItemNavbar, PxBtnMenu},
+    components: {PxItemNavbar, PxBtnMenu},
     data(){
 
         return {
