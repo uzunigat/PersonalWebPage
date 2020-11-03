@@ -56,11 +56,11 @@ export default {
 
         methods: {
 
-        clickMenu(){
+        clickMenu: function(){
 
-            this.isOpen = !this.isOpen
+            this.isOpen = !this.isOpen;
 
-        }
+        },
 
     }
     
