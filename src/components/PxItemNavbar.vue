@@ -12,8 +12,6 @@ export default {
 
     props: ["item"],
 
-
-    
 }
 </script>>
 

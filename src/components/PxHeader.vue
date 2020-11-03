@@ -15,7 +15,7 @@
 
         <div :class="isOpen ? 'block' : 'hidden'">
 
-            <span class="block text-center px-24 mx-24 text-white font-semibold pt-2 pb-2" v-for="item in items" v-bind:key="item"> 
+            <span class="block text-center px-6 text-white font-semibold pt-2 pb-2" v-for="item in items" v-bind:key="item"> 
 
                  <px-item-navbar class="block hover:bg-red-900 px-15 py-2" :item="item"/>
 
