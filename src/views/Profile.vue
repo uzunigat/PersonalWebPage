@@ -7,7 +7,7 @@
             </div>
        
 
-        <div class="flex items-center flex-col lg:flex-row xl:flex-row sm:flex-col md:flex-col  pt-5 " id="content">
+        <div class="flex items-center flex-col lg:flex-row xl:flex-row sm:flex-col md:flex-col  pt-5 ">
 
             <px-profile-content title="About" :content="about" class="flex-1 py-8 xl:px-8 sm:px-1"/>
             <img src="../assets/profilepicture.jpg" alt="Profile_Picture" class="flex-1 w-3/6 py-8 xl:px-8 sm:px-1 align-middle">

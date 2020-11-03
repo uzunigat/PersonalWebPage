@@ -44,7 +44,7 @@ export default {
             items:[
             {name: "Home",  link: "/"},
             {name: "Profile", link: "/Profile" },
-            {name: "Experiences", link: "/Experience"},
+            {name: "Experiences", link: "/Experiences"},
             {name: "Skills", link: "/Skills"},
             {name: "Projects", link: "/Project"}],
 
