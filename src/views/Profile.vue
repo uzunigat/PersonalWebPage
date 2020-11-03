@@ -7,7 +7,7 @@
             </div>
        
 
-        <div class="flex items-center sm:flex-col md:flex-col lg:flex-row xl:flex-row pt-5 " id="content">
+        <div class="flex items-center flex-col lg:flex-row xl:flex-row sm:flex-col md:flex-col  pt-5 ">
 
             <px-profile-content title="About" :content="about" class="flex-1 py-8 xl:px-8 sm:px-1"/>
             <img src="../assets/profilepicture.jpg" alt="Profile_Picture" class="flex-1 w-3/6 py-8 xl:px-8 sm:px-1 align-middle">
@@ -42,7 +42,7 @@ export default {
 
         return {
 
-            about: "Student at the University of Technology at Compiegne (France) of the 'computer engineering' career. After having followed a computer technicien training within the IPN, I managed to obtain a scholarship thanks to my good academic performance to strat a double diploma between the IPN and the UTC. In my spare time I like to learn new technologies currently used by large technology companies. On the other hand, I'm looking to become a video game deveoper and that's why I started a personal project as a Facebook Instant Game Developer",
+            about: "Student at the University of Technology at Compiegne (France) of the 'Computer Engineering' career. After having followed a computer technicien training within the IPN, I managed to obtain a scholarship thanks to my good academic performance to start a double diploma between the IPN and the UTC. In my spare time I like to learn new technologies currently used by large technology companies. On the other hand, I'm looking to become a video game developer and that's why I started a personal project as a Facebook Instant Game Developer",
             details: {name: "Rodrigo Uriel ZUNIGA TELLEZ",
                       Age: "21 Years",
                       Location: "Beauvais, France"
