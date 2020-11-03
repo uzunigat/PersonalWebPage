@@ -1,8 +1,11 @@
 <template>
 
-        <div class="bg-fixed bg-center large-height background" >
-            <div class="effect">
-                <p class="flex justify-center"></p>
+        <div class="background">
+            <div class=" py-56 xl:py-44 lg:py-40 md:py-56 sm:py-56 w-screen h-auto bg-gray-600 bg-opacity-25">
+                <div class="flex flex-col divide-y divide-gray-400 divide-opacity-25 px-24">
+                    <p class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl sm:text-3xl text-white py-2">Uriel ZUÑIGA</p>
+                    <p class="text-lg xl:text-2xl lg:text-2xl md:text-xl sm:text-lg text-white py-2 "> Interactive Resume</p>
+                </div>
             </div>
         </div>
  
@@ -12,8 +15,6 @@
 
 export default {
     name: "Home",
-
-
     
 };
 
@@ -30,16 +31,17 @@ export default {
         background-size: cover;
         background-color: #464646;
 
-        
-        filter: blur(10px);  
-        -webkit-filter: blur(10px);
-
-        height: 1000px;
-        width: 100%
+        height: 700px;
+    
 
     }
 
+    .filter {
+
+        
 
 
+
+    }
 
 </style>
