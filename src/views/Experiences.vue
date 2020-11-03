@@ -13,8 +13,8 @@
         
             <div v-for="experience of experiences" :key="experience.name">
                 <div class="grid lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-3 lg:gap-x-2 md:gap-y-2 sm:gap-y-2" >
-                    <px-experience-title class="text-left pl-24 xl:py-5 " :name="experience.name.toUpperCase()" :date_debut="experience.date_debut" :date_fin="experience.date_fin" />
-                    <px-experience-content class="text-left pl-24 xl:py-5" :diploma="experience.diploma" :description="experience.description" :location="experience.location"/>
+                    <px-experience-title class="text-left pl-2 xl:pl-24 lg:pl-24 md:pl-2 sm-pl-2 xl:py-5 " :name="experience.name.toUpperCase()" :date_debut="experience.date_debut" :date_fin="experience.date_fin" />
+                    <px-experience-content class="text-left pl-2 xl:pl-24 lg:pl-24 md:pl-2 sm-pl-2 xl:py-5 " :diploma="experience.diploma" :description="experience.description" :location="experience.location"/>
                 </div>
             </div>
 
@@ -27,8 +27,8 @@
         
             <div v-for="career of careers" :key="career.name">
                 <div class="grid lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-3 lg:gap-x-2 md:gap-y-2 sm:gap-y-2 ">
-                    <px-experience-title class="text-left pl-24 xl:py-5" :name="career.name.toUpperCase()" :date_debut="career.date_debut" :date_fin="career.date_fin" />
-                    <px-experience-content class="text-left pl-24 xl:py-5" :diploma="career.project" :description="career.description" :location="career.location"/>
+                    <px-experience-title class="text-left pl-2 xl:pl-24 lg:pl-24 md:pl-2 sm-pl-2 xl:py-5 " :name="career.name.toUpperCase()" :date_debut="career.date_debut" :date_fin="career.date_fin" />
+                    <px-experience-content class="text-left pl-2 xl:pl-24 lg:pl-24 md:pl-2 sm-pl-2 xl:py-5 " :diploma="career.project" :description="career.description" :location="career.location"/>
                 </div>
             </div>
 
