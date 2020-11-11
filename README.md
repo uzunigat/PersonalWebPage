@@ -1,4 +1,4 @@
-# curso
+# Personal Page with Vue.js and Tail Wind
 
 ## Project setup
 ```
