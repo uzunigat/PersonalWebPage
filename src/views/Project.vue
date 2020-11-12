@@ -9,7 +9,7 @@
         </div>
 
         <div>
-            <div class="grid grid-flow-col lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-3 lg:gap-x-2 md:gap-y-2 sm:gap-y-2 ">
+            <div class="grid lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-3 lg:gap-x-2 md:gap-y-2 sm:gap-y-2 ">
                 
                 <div v-for="repo of repos" :key="repo.id">
                         <a :href="repo.html_url"><px-container-repo class="transition duration-500 ease-in-out py-6 mx-3 text-left px-3 transform hover:-translate-y-1 hover:scale-105" :name="repo.name" :url="repo.html_url" :desc="repo.description" :language="repo.language"/></a>
